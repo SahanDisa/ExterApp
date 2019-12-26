@@ -9,19 +9,41 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Welcome to Flutter',
 
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flix Exter'),
-          centerTitle: true,
-          backgroundColor: Colors.deepOrange[400],
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Flix Exter',
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.0,
+            color: Colors.white,
+          ),
         ),
-        body: Center(
-          child: Text('New App(App to ML)'),
+        centerTitle: true,
+        backgroundColor: Colors.deepOrange[400],
+      ),
+      body: Center(
+        child: Text(
+          'New App(App to ML)',
+          style: TextStyle(
+            fontSize: 18.0,
+            fontFamily: 'AGENTRED',
+          ),
         ),
-        floatingActionButton: FloatingActionButton(
-          child: Text('click'),
-          backgroundColor: Colors.deepOrange[200],
-        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text('Flixs'),
+        backgroundColor: Colors.deepOrange[600],
       ),
     );
   }
