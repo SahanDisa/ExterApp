@@ -1,6 +1,6 @@
-# calcapp
+# Exter App
 
-A new Flutter application.
+A new Flutter application for Machine Learning Purposes
 
 ## Getting Started
 
