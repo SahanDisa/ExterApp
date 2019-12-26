@@ -1,6 +1,6 @@
-# flutter_app2
+# Exter App
 
-A new Flutter application.
+A new Flutter application for Machine Learning Purposes
 
 ## Getting Started
 
