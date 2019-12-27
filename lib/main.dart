@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'Welcome to Flutter',
 
       home: Home(),
+
     );
   }
 }
@@ -31,19 +32,74 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.deepOrange[400],
       ),
-      body: Center(
-        child: Text(
-          'New App(App to ML)',
-          style: TextStyle(
-            fontSize: 18.0,
-            fontFamily: 'AGENTRED',
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Text(
+              'Hello Flix',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-        ),
+          FlatButton(
+            onPressed: (){},
+            color: Colors.amber,
+            child: Text(
+                'Mail Me'
+            ),
+          ),
+          RaisedButton.icon(
+              onPressed: (){},
+              icon: Icon(
+                Icons.accessibility_new
+
+              ),
+              label: Text('Hi What\'s new'),
+          ),
+        ],
+
       ),
+//      Container(
+//
+//      ),
+//        child: RaisedButton.icon(
+//            onPressed: (){},
+//            icon: Icon(
+//              Icons.mail
+//            ),
+//            label: Text('mail me'),
+//            color: Colors.amber,
+//        ),
+//          Image(
+//            image: AssetImage('assets/style_1.jpg'),
+//          ),
+
+
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child: Text('Flixs'),
         backgroundColor: Colors.deepOrange[600],
+      ),
+
+    );
+  }
+}
+
+class LIcon extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Icon(
+            Icons.add,
+          ),
+          Icon(
+            Icons.face,
+          )
+        ],
       ),
     );
   }
